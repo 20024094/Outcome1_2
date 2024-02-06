@@ -1,8 +1,14 @@
 package assessment12;
 
 /**
+ * Module: Software Development: Programming Foundations
+ * Student: Daniel Barbu: 20024094
+ * Application: Assessment1_2
+ * Version: 1.0
+ * Date: 6/02/2024
+ * Files: Main.java, SizeFinder.java, FindAverage.java
  *
- * @author danie
+ * @author Daniel Barbu
  */
 
 public class Main {
@@ -17,7 +23,7 @@ public class Main {
         int largestSize = SizeFinder.findLargest(storageSpaces);
         System.out.println("The largest file size is: " + largestSize + " MB");
         
-        // Utilizing FileStatistics
+        // Utilizing FileAverage
         FindAverage.displayFileStatistics(storageSpaces);
     }
 }
