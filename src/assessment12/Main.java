@@ -16,14 +16,18 @@ public class Main {
     static int[] storageSpaces = {232, 241, 324, 216, 221, 298, 334, 212, 235, 324, 264, 141};
 
     public static void main(String[] args) {
+        // creating an instance of SizeFinder
+        SizeFinder sizeFinder = new SizeFinder();
         // Displaying all elements in the array
-        SizeFinder.displayAllElements(storageSpaces);
+        sizeFinder.displayAllElements(storageSpaces);
 
         // Finding the largest file size and displaying it
         int largestSize = SizeFinder.findLargest(storageSpaces);
         System.out.println("The largest file size is: " + largestSize + " MB");
         
+        // creating an instance of FindAverage
+        FindAverage findAverage = new FindAverage();
         // Utilizing FileAverage
-        FindAverage.displayFileStatistics(storageSpaces);
+        findAverage.displayFileStatistics(storageSpaces);
     }
 }
