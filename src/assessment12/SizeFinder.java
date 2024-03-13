@@ -11,21 +11,31 @@ package assessment12;
  * @author Daniel Barbu
  */
 
+
+/**
+ * The SizeFinder class provides methods to find the largest file size and display all file sizes.
+ */
 public class SizeFinder {
-    // Method to find the largest element in the array
+    /**
+     * Finds the largest file size within an array of storage spaces.
+     * @param storageSpaces Array of file sizes.
+     * @return The largest file size found in the array.
+     */
     public static int findLargest(int[] storageSpaces) {
         // Assume the first element is the largest initially
-        int largest = storageSpaces[0]; 
+        int largest = storageSpaces[0]; // Start by assuming the first element is the largest.
         for (int size : storageSpaces) {
             if (size > largest) {
-                // Update largest if current size is greater
-                largest = size; 
+                largest = size; // Update largest if current size is greater.
             }
         }
         return largest;
     }
 
-    // Method to display all elements in the array
+    /**
+     * Displays all file sizes in the storage spaces array.
+     * @param storageSpaces Array of file sizes to be displayed.
+     */
     public static void displayAllElements(int[] storageSpaces) {
         System.out.println("Displaying all file sizes:");
         for (int size : storageSpaces) {

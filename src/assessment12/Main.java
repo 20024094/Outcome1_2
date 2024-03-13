@@ -11,23 +11,34 @@ package assessment12;
  * @author Daniel Barbu
  */
 
-public class Main {
-    // Globally available array of storage spaces in Megabytes (MB)
-    static int[] storageSpaces = {232, 241, 324, 216, 221, 298, 334, 212, 235, 324, 264, 141};
 
+/**
+ * Main class is responsible for starting the program and utilizing the SizeFinder and FindAverage
+ * instantiated objects
+ * functionalities to process storage spaces information.
+ */
+public class Main {
+    // Globally available array of storage spaces in Megabytes (MB) representing file sizes
+    static int[] storageSpaces = {232, 241, 324, 216, 221, 298, 334, 212, 235, 324, 264, 141};
+    
+    
+    /**
+     * main method which serves as the entry point for the program.
+     * @param args Command line arguments (not used in this application).
+     */
     public static void main(String[] args) {
-        // creating an instance of SizeFinder
+        // Instantiate SizeFinder to use its methods for finding and displaying sizes.
         SizeFinder sizeFinder = new SizeFinder();
-        // Displaying all elements in the array
+        // Display all file sizes using SizeFinder.
         sizeFinder.displayAllElements(storageSpaces);
 
-        // Finding the largest file size and displaying it
+        // Find and display the largest file size in the array.
         int largestSize = SizeFinder.findLargest(storageSpaces);
         System.out.println("The largest file size is: " + largestSize + " MB");
         
-        // creating an instance of FindAverage
+        // Instantiate FindAverage to calculate and display file statistics.
         FindAverage findAverage = new FindAverage();
-        // Utilizing FileAverage
+        // Display file statistics such as count, total memory, and average size.
         findAverage.displayFileStatistics(storageSpaces);
     }
 }
