@@ -5,7 +5,7 @@ package assessment12;
  * Student: Daniel Barbu: 20024094
  * Application: Assessment1_2
  * Version: 1.0
- * Date: 6/02/2024
+ * Date: 13/03/2024
  * Files: Main.java, SizeFinder.java, FindAverage.java
  *
  * @author Daniel Barbu
